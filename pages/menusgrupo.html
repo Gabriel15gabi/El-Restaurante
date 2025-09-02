@@ -1,0 +1,118 @@
+/pages/menu.html
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos esenciales -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú para grupos - El Restaurante</title>
+  
+  <!-- Fuentes desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Animaciones AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegación principal -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Logo del restaurante -->
+      <div class="logo">
+        <img src="../media/imagenes/logo1.png" alt="Logo del restaurante" />
+      </div>
+      
+      <!-- Nombre visible del restaurante -->
+      <h1 class="nombrelogo">El Restaurante</h1>
+      
+      <!-- Menú de navegación -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./carta.html">Carta</a></li>
+          <li><a href="./especialidades.html">Especialidades</a></li>
+          <li><a href="./menusgrupo.html" aria-current="page">Menú</a></li>
+          <li><a href="./reservas.html">Reservas</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Botón hamburguesa para dispositivos móviles -->
+      <div class="burger" id="burger" aria-label="Menú móvil">☰</div>
+    </div>
+  </header>
+
+  <!-- Sección principal con menús para grupos -->
+  <section class="menu menu-grupos">
+    <h2>Menú para Grupos</h2>
+    
+    <!-- Contenedor de los menús individuales -->
+    <div class="menu-items">
+      <!-- Menú Celebración -->
+      <div class="menu-item">
+        <img src="../media/imagenes/fotocelebracion.jpg" alt="Menú Celebración" loading="lazy" />
+        <h3>Menú Celebración</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Incluye entrantes, principal, postre y bebida.</p>
+      </div>
+      
+      <!-- Menú Empresa -->
+      <div class="menu-item">
+        <img src="../media/imagenes/fotocenaempresa.png" alt="Menú Empresa" loading="lazy" />
+        <h3>Menú Empresa</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pensado para comidas de empresa con reserva.</p>
+      </div>
+      
+      <!-- Menú Familiar -->
+      <div class="menu-item">
+        <img src="../media/imagenes/fotofamilia.jpg" alt="Menú Familiar" loading="lazy" />
+        <h3>Menú Familiar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ideal para compartir entre amigos y familia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Información adicional sobre los menús -->
+  <div class="menu-includes">
+    <p><i class="fas fa-check-circle"></i> Entrante + Plato principal + Postre</p>
+    <p><i class="fas fa-check-circle"></i> Bebida incluida</p>
+    <p><i class="fas fa-check-circle"></i> Opción vegetariana disponible</p>
+  </div>
+
+  <!-- Aviso importante para reservas en grupo -->
+  <p class="aviso-reserva" role="alert">Para grupos es necesario reservar con antelación.</p>
+
+  <!-- Pie de página con derechos y redes sociales -->
+  <footer>
+    <p>&copy; 2025 El Restaurante. Todos los derechos reservados.</p>
+    <div class="redes-sociales">
+      <!-- Enlaces a redes sociales con iconos accesibles -->
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Banner de cookies con opciones de aceptación o rechazo -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+    <p>Este sitio web utiliza cookies para mejorar la experiencia de usuario. <a href="#">Más información</a>.</p>
+    <button id="accept-cookies">Aceptar</button>
+    <button id="reject-cookies">Rechazar</button>
+  </div>
+
+  <!-- Scripts JavaScript externos -->
+  <script src="../javascript/scripts.js"></script>
+</body>
+</html>

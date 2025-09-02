@@ -1,0 +1,134 @@
+/pages/especialidades.html
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Especialidades - El Restaurante</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Librería AOS para animaciones (si se usa en CSS/JS) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../media/imagenes/logo1.png" alt="Logo">
+      </div>
+      <h1 class="nombrelogo">El Restaurante</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./carta.html">Carta</a></li>
+          <li><a href="./especialidades.html" aria-current="page">Especialidades</a></li>
+          <li><a href="./menusgrupo.html">Menú</a></li>
+          <li><a href="./reservas.html">Reservas</a></li>
+        </ul>
+      </nav>
+      <div class="burger" id="burger">☰</div>
+    </div>
+  </header>
+
+  <!-- Especialidades -->
+  <section class="menu" id="especialidades">
+    <h2>Especialidades</h2>
+    <!-- Lista horizontal con scroll -->
+    <div class="menu-items horizontal-scroll">
+
+      <!-- Cada .menu-item es un plato -->
+      <div class="menu-item">
+        <img src="../media/imagenes/tortitas.jpg" alt="Tortitas caseras">
+        <p><strong>Tortitas caseras</strong> con miel y frutos rojos.</p>
+      </div>
+
+      <div class="menu-item">
+        <!-- OJO: nombre de archivo con espacios -->
+        <img src="../media/imagenes/solomillo%20al%20foie%202.jpg" alt="Solomillo al foie">
+        <p><strong>Solomillo de ternera</strong> al foie.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="../media/imagenes/tarta-de-queso-y-bayas-sobre-la-mesa.jpg" alt="Tarta de queso">
+        <p><strong>Tarta de queso al horno</strong> con mermelada casera.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="../media/imagenes/plato4kcomida3.jpg" alt="Tiras de ternera con salsa a la naranja">
+        <p><strong>Tiras de Ternera</strong> con salsa a la naranja.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="../media/imagenes/hamburguesapremium.jpg" alt="Hamburguesa Premium">
+        <p><strong>Hamburguesa Premium</strong> con cebolla caramelizada.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="../media/imagenes/salmonteriyaki.jpg" alt="Salmón Teriyaki">
+        <p><strong>Salmón</strong> Teriyaki.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="../media/imagenes/raviolislangosta.jpg" alt="Raviolis de Langosta">
+        <p><strong>Raviolis</strong> de Langosta.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="../media/imagenes/entrecotmadurado.jpg" alt="Entrecot madurado a la leña">
+        <p><strong>Entrecot madurado</strong> hecho con leña.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="../media/imagenes/paellamixta.jpg" alt="Paella Mixta">
+        <p><strong>Paella</strong> Mixta.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vídeo de especialidades -->
+  <section class="video-especialidades">
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="../media/videos/videoleña.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <div class="video-texto">
+        <h3>Especialidades de la Casa</h3>
+        <p>Descubre nuestros platos más destacados preparados con ingredientes frescos y tradición.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 El Restaurante. Todos los derechos reservados.</p>
+    <div class="redes-sociales"> 
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <!-- Banner de cookies -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>Este sitio web utiliza cookies para mejorar la experiencia de usuario. <a href="#">Más información</a>.</p>
+    <button id="accept-cookies">Aceptar</button>
+    <button id="reject-cookies">Rechazar</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../javascript/scripts.js"></script>
+
+</body>
+</html>

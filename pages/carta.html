@@ -1,0 +1,145 @@
+/pages/carta.html
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta - El Restaurante</title>
+
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../media/imagenes/logo1.png" alt="Logo">
+      </div>
+
+      <!-- Nombre -->
+      <h1 class="nombrelogo">El Restaurante</h1>
+
+      <!-- Menú principal -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./carta.html" aria-current="page">Carta</a></li>
+          <li><a href="./especialidades.html">Especialidades</a></li>
+          <li><a href="./menusgrupo.html">Menú</a></li>
+          <li><a href="./reservas.html">Reservas</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón menú hamburguesa -->
+      <div class="burger" id="burger">☰</div>
+    </div>
+  </header>
+
+  <!-- Sección Carta en el restaurante -->
+  <section class="carta" id="carta">
+    <div class="carta-wrapper">
+      <div class="contenido-carta">
+        <h2>Nuestra Carta</h2>
+        <div class="linea-separadora"></div>
+        <p class="descripcion">
+          Descubre una selección de platos cuidadosamente preparados, fusionando tradición y vanguardia.
+        </p>
+
+        <!-- Lista de platos en el restaurante -->
+        <div class="carta-platos">
+          <div class="plato">
+            <img src="../media/imagenes/raviolislangosta.jpg" alt="Raviolis de Langosta">
+            <div class="plato-info">
+              <h3>Raviolis de Langosta</h3>
+              <p>Rellenos de marisco con salsa bisqué cremosa. Una delicadeza del chef.</p>
+            </div>
+          </div>
+
+          <div class="plato">
+            <img src="../media/imagenes/salmonteriyaki.jpg" alt="Salmón Teriyaki">
+            <div class="plato-info">
+              <h3>Salmón Teriyaki</h3>
+              <p>Filete glaseado con soja dulce, acompañado de arroz jazmín y verduras salteadas.</p>
+            </div>
+          </div>
+
+          <div class="plato">
+            <img src="../media/imagenes/entrecotmadurado.jpg" alt="Entrecot Madurado">
+            <div class="plato-info">
+              <h3>Entrecot Madurado</h3>
+              <p>Carne seleccionada, cocinada al punto, servida con puré trufado y salsa de vino tinto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mensaje extra -->
+  <div class="info-carta">
+    <p>"Pocos platos, muchas emociones: seleccionamos lo mejor para ti."</p>
+  </div>
+
+  <!-- Sección Carta para llevar -->
+  <section class="carta" id="comida-llevar">
+    <h2>Carta para Llevar</h2>
+    <div class="linea-separadora"></div>
+    <p class="descripcion">
+      Disfruta de nuestros mejores platos desde casa. Haz tu pedido para llevar y vive la experiencia El Restaurante donde quieras.
+    </p>
+
+    <!-- Lista de platos para llevar -->
+    <div class="carta-platos">
+      <div class="plato">
+        <img src="../media/imagenes/paellamixta.jpg" alt="Paella Mixta">
+        <div class="plato-info">
+          <h3>Paella Mixta</h3>
+          <p>Tradicional paella con mariscos y carnes, ideal para compartir.</p>
+        </div>
+      </div>
+
+      <div class="plato">
+        <img src="../media/imagenes/ensaladagourmet.jpg" alt="Ensalada Gourmet">
+        <div class="plato-info">
+          <h3>Ensalada Gourmet</h3>
+          <p>Mezclum de hojas verdes con queso de cabra, nueces y vinagreta de frutos rojos.</p>
+        </div>
+      </div>
+
+      <div class="plato">
+        <img src="../media/imagenes/hamburguesapremium.jpg" alt="Hamburguesa Premium">
+        <div class="plato-info">
+          <h3>Hamburguesa Premium</h3>
+          <p>Pan artesanal, carne 100% vacuno, cebolla caramelizada y queso madurado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 El Restaurante. Todos los derechos reservados.</p>
+    <div class="redes-sociales"> 
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <!-- Banner de cookies -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>Este sitio web utiliza cookies para mejorar la experiencia de usuario. <a href="#">Más información</a>.</p>
+    <button id="accept-cookies">Aceptar</button>
+    <button id="reject-cookies">Rechazar</button>
+  </div>
+
+  <!-- Script -->
+  <script src="../javascript/scripts.js"></script>
+</body>
+</html>

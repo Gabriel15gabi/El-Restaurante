@@ -1,0 +1,106 @@
+/pages/reservas.html
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservas - El Restaurante</title>
+  
+  <!-- Fuentes Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  
+  <!-- Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Librería AOS para animaciones (opcional) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="../media/imagenes/logo1.png" alt="Logo" />
+      </div>
+      <h1 class="nombrelogo">El Restaurante</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./carta.html">Carta</a></li>
+          <li><a href="./especialidades.html">Especialidades</a></li>
+          <li><a href="./menusgrupo.html">Menú</a></li>
+          <li><a href="./reservas.html" aria-current="page">Reservas</a></li>
+        </ul>
+      </nav>
+      <div class="burger" id="burger">☰</div>
+    </div>
+  </header>
+  
+  <!-- Sección Reservas -->
+  <section class="reservas" id="contacto">
+    <h2>Reserva tu mesa</h2>
+    <div class="reservas-contenedor">
+      
+      <!-- Formulario de reservas (FormSubmit con token + retorno a la misma página) -->
+      <div class="reservas-formulario">
+        <form action="https://formsubmit.co/ee53481122716f15b01aaa06a2a96617" method="POST">
+          <!-- Config FormSubmit -->
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+          <input type="hidden" name="_subject" value="Nueva reserva desde la web" />
+          <!-- Cambia host/puerto si no usas 127.0.0.1:5500 -->
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/reservas.html?ok=1" />
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_honey" style="display:none">
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Número de comensales, horario, alergias..."></textarea>
+
+          <button type="submit">Enviar reserva</button>
+        </form>
+      </div>
+
+      <!-- Mapa embebido de Google Maps -->
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.849183082692!2d-3.7037906845922175!3d40.41677597936371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229975001f0ff%3A0x8db4a25c417c72b2!2sPuerta%20del%20Sol!5e0!3m2!1ses!2ses!4v0000000000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 El Restaurante. Todos los derechos reservados.</p>
+    <div class="redes-sociales">
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <!-- Banner de cookies -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+    <p>Este sitio web utiliza cookies para mejorar la experiencia de usuario. <a href="#">Más información</a>.</p>
+    <button id="accept-cookies">Aceptar</button>
+    <button id="reject-cookies">Rechazar</button>
+  </div>
+  
+  
+</body>
+</html>

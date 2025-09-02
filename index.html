@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Restaurante</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- Iconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER con menú -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="media/imagenes/logo1.png" alt="Logo El Restaurante">
+      </div>
+
+      <!-- Nombre del restaurante -->
+      <h1 class="nombrelogo">El Restaurante</h1>
+
+      <!-- Navegación principal -->
+      <nav>
+  <ul class="nav-links">
+    <li><a href="./index.html" aria-current="page">Inicio</a></li>
+    <li><a href="./pages/carta.html">Carta</a></li>
+    <li><a href="./pages/especialidades.html">Especialidades</a></li>
+    <li><a href="./pages/menusgrupo.html">Menú</a></li>
+    <li><a href="./pages/reservas.html">Reservas</a></li>
+  </ul>
+</nav>
+
+      <!-- Menú tipo burger para móviles -->
+      <div class="burger" id="burger">☰</div>
+    </div>
+  </header>
+
+  <!-- VIDEO de bienvenida -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="media/videos/cocinero.mp4" type="video/mp4">
+      Tu navegador no soporta video en HTML5.
+    </video>
+
+    <!-- Texto sobre el vídeo -->
+    <div class="hero-text">
+      <h1>COCINA</h1>
+      <p>
+        En nuestro restaurante, cada plato es una obra maestra.<br>
+        Fusionamos la tradición con la innovación para ofrecerte una experiencia gastronómica única.<br>
+        Bienvenido a la alta cocina reinventada.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección con imágenes y frases -->
+  <section class="seccion-alternada">
+    <!-- Bloque 1 -->
+    <div class="bloque">
+      <img src="media/imagenes/plato4kcomida3.jpg" alt="Plato decorado">
+      <div class="bloque-texto">
+        <h3>“Cocinar es un arte que se disfruta con el alma.”</h3>
+      </div>
+    </div>
+
+    <!-- Bloque 2 -->
+    <div class="bloque">
+      <img src="media/imagenes/plato4kcomida2.jpg" alt="Plato gourmet">
+      <div class="bloque-texto">
+        <h3>“Cada plato es una historia contada con ingredientes.”</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 El Restaurante. Todos los derechos reservados.</p>
+    <div class="redes-sociales"> 
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <!-- Banner de cookies -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>
+      Este sitio web utiliza cookies para mejorar la experiencia de usuario. 
+      <a href="#">Más información</a>.
+    </p>
+    <button id="accept-cookies">Aceptar</button>
+    <button id="reject-cookies">Rechazar</button>
+  </div>
+
+  <!-- JavaScript principal -->
+  <script src="javascript/scripts.js"></script>
+</body>
+</html>
