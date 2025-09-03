@@ -1,5 +1,3 @@
-/pages/reservas.html
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,13 +8,11 @@
   <!-- Fuentes Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
   
-  <!-- Hoja de estilos principal -->
-  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Hoja de estilos principal (ABSOLUTA) -->
+  <link rel="stylesheet" href="/El-Restaurante/css/styles.css?v=1" />
   
   <!-- Iconos Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
-  <!-- Librería AOS para animaciones (opcional) -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -24,16 +20,16 @@
   <header class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <img src="../media/imagenes/logo1.png" alt="Logo" />
+        <img src="/El-Restaurante/media/imagenes/logo1.png" alt="Logo" />
       </div>
       <h1 class="nombrelogo">El Restaurante</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./carta.html">Carta</a></li>
-          <li><a href="./especialidades.html">Especialidades</a></li>
-          <li><a href="./menusgrupo.html">Menú</a></li>
-          <li><a href="./reservas.html" aria-current="page">Reservas</a></li>
+          <li><a href="/El-Restaurante/index.html">Inicio</a></li>
+          <li><a href="/El-Restaurante/pages/carta.html">Carta</a></li>
+          <li><a href="/El-Restaurante/pages/especialidades.html">Especialidades</a></li>
+          <li><a href="/El-Restaurante/pages/menusgrupo.html">Menú</a></li>
+          <li><a href="/El-Restaurante/pages/reservas.html" aria-current="page">Reservas</a></li>
         </ul>
       </nav>
       <div class="burger" id="burger">☰</div>
@@ -45,15 +41,15 @@
     <h2>Reserva tu mesa</h2>
     <div class="reservas-contenedor">
       
-      <!-- Formulario de reservas (FormSubmit con token + retorno a la misma página) -->
+      <!-- Formulario de reservas (FormSubmit) -->
       <div class="reservas-formulario">
         <form action="https://formsubmit.co/ee53481122716f15b01aaa06a2a96617" method="POST">
           <!-- Config FormSubmit -->
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="box" />
           <input type="hidden" name="_subject" value="Nueva reserva desde la web" />
-          <!-- Cambia host/puerto si no usas 127.0.0.1:5500 -->
-          <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/reservas.html?ok=1" />
+          <!-- Redirección al terminar (ABSOLUTA a Pages) -->
+          <input type="hidden" name="_next" value="https://gabriel15gabi.github.io/El-Restaurante/pages/reservas.html?ok=1" />
           <!-- Honeypot anti-spam -->
           <input type="text" name="_honey" style="display:none">
 
@@ -101,6 +97,7 @@
     <button id="reject-cookies">Rechazar</button>
   </div>
   
-  
+  <!-- JS (ABSOLUTO) -->
+  <script src="/El-Restaurante/javascript/scripts.js" defer></script>
 </body>
 </html>
