@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/El-Restaurante/:path*", "destination": "/:path*" }
+  ]
+}
